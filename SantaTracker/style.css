@@ -1,0 +1,32 @@
+/*Color scheme: https://coolors.co/7c9eb2-52528c-372554-231123-000000*/
+body{
+  margin: 0;
+  padding: 50px;
+  font-size: 2en;
+  text-align: center;
+  background-color: #000000;
+  color: #7C9EB2;
+  font-family: 'Andika New Basic', sans-serif;
+}
+h1, p, div{
+  margin: 0;
+}
+button{
+  background-color: transparent;
+  border: 1px solid #7C9EB2;
+  color:#7C9EB2;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  font-family: 'Andika New Basic', sans-serif;
+}
+
+button:hover{
+  background-color: #231123;
+  color: white;
+  cursor: pointer;
+}
+table{
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}

@@ -1,0 +1,37 @@
+body{
+    font-family:'Consolas', monospace;
+}
+h1{
+    font-family: 'Source Serif Pro';
+}
+p{
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+@media (prefers-color-scheme: dark){
+    body{
+        color: #ddd;
+        background-color: #151515;
+    }
+    body a{
+        /*color: #809fff;*/
+        color: #c01e1e;
+    }
+}
+
+/*@import url('https://fonts.googleapis.com/css?family=Orbitron');*/
+/* body {
+    background-color: #151515;
+  } */
+#clock {
+  font-family: 'Source Serif Pro';
+  color: #c01e1e;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
