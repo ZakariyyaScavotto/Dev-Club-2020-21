@@ -5,23 +5,61 @@
         <meta charset="UTF-8">
         <meta name="viewport">
         <link rel="stylesheet" href="style.css" type = "text/css">
-
     </head>
     <body>
-        <div class="container" id="QuickLinks">
-            <h1>
-                Quick Links
+        <div id="main-container">
+            <div class="container" id="QuickLinks">
+                <h1>Quick Links</h1>
                 <p><a href="https://youtube.com">Youtube</a></p>
                 <p><a href="https://classroom.google.com">Google Classroom</a></p>
                 <p><a href="https://drive.google.com">Google Drive</a></p>
                 <p><a href="https://gmail.com">Gmail</a></p>
                 <p><a href="https://ion.tjhsst.edu/">Ion</a></p>
-            </h1>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <!-- Anchor -->
+            <div class="container anchor">
+                <h1>Anchor</h1>
+                <p><a href="">Monday Attendance</a></p>
+            </div>
+            <!-- Blue -->
+            <div class="container blue">
+                <h1>Blue</h1>
+                <p><a href="">AI</a></p>
+                <p><a href="">APUSH</a></p>
+                <p><a href="">English</a></p>
+                <p><a href="">BC Calc</a></p>
+            </div>
+            <!-- Red -->
+            <div class="container red">
+                <h1>Red</h1>
+                <p><a href="">Orchestra</a></p>
+                <p><a href="">Honors Physics</a></p>
+                <p><a href="">Electronics (Digital)</a></p>
+                <p><a href="">Homeroom</a></p>
+            </div>
+            <!-- 8th -->
+            <div class="container red">
+                <h1>8th</h1>
+                <p><a href="">Quantum Computing</a></p>
+                <p><a href="">ML</a></p>
+                <p><a href="">Dev Club</a></p>
+                <p><a href="">Magician Alliance</a></p>
+                <p><a href="">Electronics</a>
+                </p>
+            </div>
+            <input type="button" id="btnHide" onclick="hideAll()" value="Hide" />
+            <input type="button" id="btnShow" onclick="showAll()" value="Show All" /> 
+            <script src="buttonScript.js"></script>
         </div>
 
         <div id="clock"></div>
         <script src="clockFunction.js"></script>
 
-        
+        <div id="quoteArea"></div>
+        <script src="randomQuoteFunction.js"></script>
+        <input type="button" id="btnQuote" onclick="quote()" value="New Apex Legends Quote" /> 
     </body>
 </html>

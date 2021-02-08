@@ -1,37 +1,96 @@
-body{
-    font-family:'Consolas', monospace;
+html, body {
+    height: 100%;
+    margin: 0;
 }
-h1{
+
+body {
+    font-family: 'Consolas', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010101;
+    background-image: url("apex_legends_logo_by_dragonshadesx_dd39uu8-fullview.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
     font-family: 'Source Serif Pro';
 }
-p{
+
+p {
     font-family: 'Source Sans Pro';
     font-size: 18px;
 }
-a{
+
+a {
     text-decoration: none;
-    color: blue;
 }
-@media (prefers-color-scheme: dark){
-    body{
+
+#main-container {
+    display: flex;
+    align-items: baseline;
+}
+
+#main-container>div {
+    margin: 10px 1000px 10px 0px;/*10px 50px 10px 50px;*/
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+}
+
+.flex-container>.container {
+    display: none;
+}
+
+#btnShow {
+    position: fixed;
+    margin: 10px;
+    right: 0px;
+    bottom: 0;
+}
+#btnHide {
+    position: fixed;
+    margin: 10px;
+    right: 0;
+    bottom: 0;
+}
+#btnQuote {
+    position: fixed;
+    text-align: center;
+    margin: 10px;
+    bottom: 42px;
+}
+@media (prefers-color-scheme: dark) {
+    body {
         color: #ddd;
-        background-color: #151515;
+        background-color: #010101;
     }
-    body a{
-        /*color: #809fff;*/
+
+    body a {
         color: #c01e1e;
     }
 }
 
-/*@import url('https://fonts.googleapis.com/css?family=Orbitron');*/
-/* body {
-    background-color: #151515;
-  } */
 #clock {
   font-family: 'Source Serif Pro';
-  color: #c01e1e;
+  color: #ddd;
   font-size: 56px;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  position: fixed;
+  top: 0;
+  margin-left: 20px;
+}
+
+#quoteArea {
+    font-family: 'Source Serif Pro';
+    color: #ddd;
+    font-size: 30px;
+    text-align: center;
+    position: fixed;
+    bottom:0;
 }
