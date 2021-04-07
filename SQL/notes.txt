@@ -1,0 +1,27 @@
+Structured Query Language (SQL)
+Focused on operations vs. program features(loops)
+CREATE: create different tables in database (like creating new sheet in spreadsheet)
+INSERT: insert new row(s) into table
+SELECT: select given rows, provide certain condition
+UPDATE: select row and change values
+DELETE: delete rows
+
+CREATE TABLE 'students'
+	('id' INTEGER PRIMARY KEY, 'name' TEXT, 'county' TEXT) #Adds categories into table with name and the data type
+	
+INSERT INTO "students" ("id", "name", "county") #Add into table specifying the order of values
+#Convention: single quotes for creating/inputing
+	VALUES(1, 'Alex', 'FCPS')
+	
+SELECT * FROM "students" #* = wildcard, selects all from students
+
+UPDATE "students" set "name" = 'Alex Suh' WHERE id=1 #updates row, setting name of row to Alex Suh based on id
+
+DELETE FROM "students" WHERE id = 1
+
+datatypes:
+BLOB (binary stuff)
+INTEGER
+NULL
+REAL
+TEXT

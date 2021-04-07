@@ -1,0 +1,81 @@
+/*Just the CSS, Feel Free To Change*/
+ /*includes padding and border in width and height of all elements
+ Specified by universal select character (*) */
+* {
+  box-sizing: border-box;
+}
+/*Has html cover full height of page*/
+html {
+	height: 100%;
+}
+/*sets up body css*/
+body {
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica,
+    sans-serif;
+	background-color: rgba(223, 242, 247, .5); /*sets up half transparent (.5) background*/
+	height: 100%;
+	margin: 0;
+}
+/*Sets padding on spans*/
+span {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+/*sets up container to be centered flex container*/
+.container {
+	display: flex;
+  	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+/*sets css for the whole chat area*/
+/*most important part is setting its position*/
+.chat {
+	height: 300px;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+	align-items: center;
+} 
+
+/*sets up input box*/ 
+input { 
+	border: 0; 
+	padding: 15px; 
+	margin-left: auto;
+	border-radius: 10px; 
+}
+/*sets up the message box*/
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+}
+/*sets bot margin*/
+#bot {
+	margin-left: auto;
+}
+/*feel free to choose a font*/
+.bot {
+	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,  
+	monospace;
+}
+/*sets height of avatar picture*/
+.avatar {
+	height: 25px;
+}
+/*sets up response area*/
+.response {
+	display: flex;
+	align-items: center;
+	margin: 1%;
+}
